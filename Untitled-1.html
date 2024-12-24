@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Agency</title>
+    <style>
+        /* Basic styles for navigation, layout, and sections */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #333;
+            color: white;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        nav a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+        section {
+            padding: 2rem;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .form-section input, .form-section select, .form-section button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Your Travel Agency</h1>
+        <p>Your gateway to the world’s best travel experiences!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#charter">Charter</a>
+        <a href="#booking">Booking</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>Explore the best travel packages and adventures from all around the world.</p>
+        <div class="image-gallery">
+            <img src="image1.jpg" alt="Travel Image 1">
+            <img src="image2.jpg" alt="Travel Image 2">
+            <img src="image3.jpg" alt="Travel Image 3">
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a global travel agency dedicated to creating memorable experiences for our customers. With support from our parent company, we deliver luxury and budget-friendly travel options.</p>
+    </section>
+
+    <!-- Charter Section -->
+    <section id="charter">
+        <h2>Charter</h2>
+        <p>Choose from our exclusive charter options for helicopters, land vehicles, and more.</p>
+        <div class="form-section">
+            <label for="charter-location">Select a location:</label>
+            <select id="charter-location">
+                <option value="new-york">New York</option>
+                <option value="london">London</option>
+                <option value="dubai">Dubai</option>
+                <option value="sydney">Sydney</option>
+            </select>
+            <button onclick="alert('Redirecting to payment gateway')">Proceed to Payment</button>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <h2>Booking</h2>
+        <p>Book your travel destinations with ease.</p>
+        <div class="form-section">
+            <label for="booking-location">Select a destination:</label>
+            <select id="booking-location">
+                <option value="paris">Paris</option>
+                <option value="rome">Rome</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="cape-town">Cape Town</option>
+            </select>
+            <button onclick="alert('Redirecting to payment gateway')">Proceed to Payment</button>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 Your Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
